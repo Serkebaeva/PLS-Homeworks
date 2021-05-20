@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box; /*chtoby brauzer ne dobavlyal dopolnitelnye px*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #f6f6f4;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.btn {
+  display: inline-block;
+  padding: 50px 25px 50px 25px;
+  border-radius: 3px;
+  background-color: rgb(88, 196, 196);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.177;
+  text-align: center;
+  text-decoration: none; /*чтобы убрать нижнее подчеркивание ссылки*/
+  transition: all 0.3s; /* для эффекта Hover - плавность изменения бекграунда */
+}
+
+.btn:hover {
+  background-color: rgb(58, 134, 134);
+}
+/* HEADER*/
+.header {
+  min-height: 1455px;
+  text-align: center;
+  background-image: url(../images/Header-Base-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*background-size: contain; /*contain - по умолчанию*, или можно также использовать cover*/
+}
+.header-top {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 580px;
+  padding-top: 190px;
+}
+.header-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 60px;
+  color: rgb(82, 26, 102);
+  line-height: 0.8;
+}
+.header-tagline {
+  font-size: 20px;
+  color: rgb(113, 58, 132);
+  line-height: 1.2;
+}
+
+.header-bottom {
+  width: 980px;
+  margin: 0 auto;
+  display: flex; /*из-за этого свойстваб элементы пропишутся в ряд... Исправить можно указав: flex-direction:*/
+  flex-direction: column;
+  justify-content: center; /*justify-content - отвечает за вертикальный способ...*/
+}
+.header-subtitle {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.Header-scroll-to {
+  order: -1;
+}
+
+.header-bottom text {
+  font-size: 20px;
+  color: #a87bb7;
+  line-height: 1.65;
+  margin-bottom: 30px;
+}
+/*PRODUCT*/
+.product {
+  padding-top: 110px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(135deg, #9042ab, #2b093d);
+  border-top: 1px solid #360e47;
+}
+.product-inner {
+  position: relative;
+}
+
+.product-img-figure {
+  width: 760px;
+  margin: 0;
+}
+.product-img {
+  width: 100%; /*указали 100% шиирины для фото Phone, чтобы продукт не был шире своего контейнера, для кот.указана ширина width: 760px; --> в элементе product-img-figure */
+}
+.phone-img-caption {
+  position: absolute; /*по умолчанию абсолютно спозиционированный элемент появл.слева, нам нужно справа..*/
+  right: 0;
+  /*right: 50%;
+  transform: translateX(50%);- т.о. также можно спозиционировать в центр*/
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: rgb(118, 76, 140);
+}
+.product-text {
+  position: absolute;
+  right: 0;
+  width: 460px;
+  text-align: right;
+  top: -40px;
+}
+.product-titlle {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  margin: 0;
+}
+.product-description {
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(168, 123, 183);
+  line-height: 1.65;
+  margin-bottom: 40px;
+}
+
+/*FEATURES*/
+.features {
+  padding: 140px 0;
+}
+
+.features-inner {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+}
+.features-column {
+  width: 520px;
+}
+.features-item {
+  margin-bottom: 80px;
+}
+.features-item-title {
+  font-size: 15px;
+  font-family: "Lato";
+  color: rgb(82, 26, 102);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.001;
+  margin-bottom: 30px;
+}
+
+.features-description {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(122, 131, 135);
+  line-height: 1.875;
+}
+/*Description*/
+.description {
+  min-height: 455px;
+  background-image: url(../images/Section-Description-.jpg);
+  background-color: rgb(164, 98, 204);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 85% center;
+  background-blend-mode: overlay;
+}
+.description-inner {
+  padding: 120px 0px 105px 0;
+  text-align: center;
+}
+.description-item {
+  font-size: 40px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+.description-text {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 1.65;
+}
+.container {
+  width: 1020px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  margin-top: 40px;
+}
+.advantages-item {
+  position: relative;
+  width: 220px;
+  padding: 60px 10px 20px 10px;
+  margin: 10px;
+}
+.advantages-item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon-timer.jpg.svg);
+  background-repeat: no-repeat;
+}
+
+.advatages-item-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Lato";
+  color: rgb(102, 46, 121);
+  font-weight: bold;
+  line-height: 0.001;
+}
+.advantages-item-description {
+  text-align: initial;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(122, 131, 135);
+  line-height: 1.875;
+}
+.advantages-item-dashboard::before {
+  background-image: url(../images/icon-Dashboard.jpg);
+}
+.advantages-item-stats::before {
+  background-image: url(../images/icon-Stats.jpg);
+}
+.advantages-item-development::before {
+  background-image: url(../images/icon-menu.jpg);
+}
+/*FOOTER*/
+
+.footer-top {
+  padding: 25px 0;
+  background-color: #303d4c;
+}
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 75px;
+  color: #83969f;
+  background-color: #25303e;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-text {
+  width: 900px;
+  margin: 25px 90px 75px 120px;
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(131, 150, 159);
+  line-height: 2.143;
+}
+.footer-copyright {
+  width: 345px;
+  padding: 55px 50px 75px 50px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: rgb(131, 150, 159);
+  font-weight: bold;
+  line-height: 0.001;
+  text-transform: uppercase;
+}
+
+.social-list {
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-item {
+  margin: 10px;
+  line-height: 25px;
+}
+
+.social-link path {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  fill: #25303e;
+}
+
+.social-link:hover path {
+  fill: #fff;
+}

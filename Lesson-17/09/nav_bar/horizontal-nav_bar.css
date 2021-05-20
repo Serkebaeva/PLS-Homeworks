@@ -1,0 +1,176 @@
+/* сброс стилей браузера */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* конец кода сброса стилей браузера */
+
+/* БАЗОВЫЙ */
+body {
+  font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.mainNav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.mainNav li {
+  float: left;
+  width: 14em;
+}
+.mainNav li:last-of-type a {
+  border-right: 1px dashed #999;
+}
+
+.mainNav a {
+  color: #000;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px dashed #999;
+  padding: 7px 5px 7px 20px;
+  border-right: none;
+  display: block;
+  background-color: #e7e7e7;
+  background-image: url(images/nav.png);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+.mainNav a:hover {
+  font-weight: bold;
+  background-color: #b2f511;
+  background-position: 3px 50%; /*3px - увеличивает с 2px(указано в .mainNav a) на 1px; 50% - указывает расположение иконки внутри контейнера, где height задан by Default - элементом Li; и конкретно в данном случае сам png - содержит 3 иконки и нужная нам стрелка находится посередине, он использует метод CSS-спрайтов. В этом случае изображение центрируется внутри кнопки, отображая средний значок файла.*/
+}
+.home .homeLink,
+.feature .featureLink,
+.expert .expertLink,
+.quiz .quizLink,
+.projects .projectLink,
+.horoscope .horoscopeLink {
+  background-color: #ffffff;
+  background-position: 3px 100%;
+  /*background-position: 97% 100%; ----> /*Снова вы используете метод CSSспрайтов для управления позицией фонового изображения. На этот раз изображение смещается на 97 % вправо, а его нижняя часть помещается в нижнюю часть кнопки. Другими словами, значок будет отображаться внизу изображения (см. рис. 9.14). О том, как использовать процентные значения при работе с фоновыми изображениями, мы говорили в главе 8(current chapter 9)*/
+  padding-right: 15px;
+  padding-left: 30px;
+  font-weight: bold;
+}
+.projects .projectLink {
+  background-image: url(images/home.png);
+  background-position: 0 2px;
+  padding: 7px 5px 7px 30px;
+}
+.projects .projectLink:hover {
+  color: red;
+  background-position: 90% 100%;
+}

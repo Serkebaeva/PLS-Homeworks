@@ -1,0 +1,180 @@
+html {
+  padding-top: 0px;
+  color: #815791;
+}
+
+body {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  margin: 0 auto;
+  background-image: url(images/look.com.ua-142516.jpg),
+    linear-gradient(#ceadfc, #4b1f6f, #521a65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  justify-items: center;
+  width: 100%;
+  height: 780px;
+  display: list-item;
+  justify-content: space-between;
+}
+
+h1 {
+  padding-top: 120px;
+  font-family: "rosario", "roboto", sans-serif, Tahoma;
+  font-weight: normal;
+  color: #815791;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: sans-serif, Tahoma;
+  font-weight: normal;
+  color: white;
+  font-size: 2em;
+}
+
+.header-bottom {
+  padding-top: 220px;
+}
+
+h4 {
+  font-family: sans-serif, Tahoma;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 1em;
+  color: #815791;
+  font-size: 1em;
+}
+
+p {
+  font-family: arial, roboto, sans-serif, Tahoma;
+  font-weight: normal;
+  color: #41035a;
+  font-size: 1em;
+}
+
+section {
+  background-color: #815791;
+}
+
+.block01 {
+  float: left;
+  padding-left: 05em;
+  padding-top: 5em;
+}
+
+.block02 {
+  float: right;
+  padding-right: 07em;
+  padding-top: 3em;
+}
+
+.block {
+  width: auto;
+  margin: 10px;
+}
+
+.container01 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container1 {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.container2 {
+  float: right;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.intro {
+  font-family: arial, roboto, sans-serif, Tahoma;
+  font-weight: normal;
+  color: #7b488c;
+  font-size: 1em;
+  float: bottom;
+}
+.rush {
+  padding: 10px 10px 10px 10px;
+  background-image: url(images/look.com.ua-64311.jpg),
+    linear-gradient(#ceadfc, #4b1f6f, #521a65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.add.block {
+  width: auto;
+  margin: 10px;
+  text-justify: inter-word;
+  border: 1em;
+}
+.container3 {
+  display: flex;
+  background: white;
+}
+
+.container3 p,
+.container2 p,
+.container1 p {
+  color: grey;
+}
+
+.container2 p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer {
+  background: #303d4d;
+}
+
+footer p {
+  color: grey;
+}
+
+.container4 {
+  display: flex;
+  margin: 0 auto;
+  color: #e3e5e6;
+  background: #24303e;
+}
+
+.float-right {
+  float: right;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.div-copyright {
+  float: left;
+  padding: 30px 0px 20px 0px;
+  margin: 0 auto;
+  color: grey;
+}
+
+a:any-link {
+  color: white;
+  border-radius: 1px;
+  background-color: #58c4c4;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background: #58c4c4; /* Цвет фона под ссылкой */
+  color: white; /* Цвет ссылки */
+}

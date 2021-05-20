@@ -1,0 +1,13 @@
+.div-header {
+  height: 453px;
+  background: linear-gradient(#ceadfc, #ceabfd, #6a4c77, #4b1f6f, #521a65), url(images/mountain.jpg); 
+  background-size: cover;
+}
+
+
+div {
+  background-image: url(images/mountain.jpg),
+                    linear-gradient(#ceadfc, #ceabfd, #6a4c77, #4b1f6f, #521a65);
+                    background-blend-mode: overlay;
+                    height: 400px;
+                    width: 700px; }
