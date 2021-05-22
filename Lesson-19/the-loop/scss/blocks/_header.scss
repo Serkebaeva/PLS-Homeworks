@@ -1,0 +1,23 @@
+@import "../vars";
+
+.header {
+  background-color: $lightest-color;
+
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    order: -1;
+  }
+}
+
+.menu_link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.submenu {
+  display: none;
+}
