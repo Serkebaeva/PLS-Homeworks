@@ -11,82 +11,110 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/github_8.0.1_normalize.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
+
   <body>
     <div class="header">
       <div class="container">
-        <div class="header_inner">
+        <div class="header__inner">
           <div class="logo">
-            <a href="#" class="logo_link">
+            <a href="#" class="logo__link">
               <img src="images/logo.png" alt="logo_img" class="logo_img" />
             </a>
           </div>
-          <nav class="header_nav">
+          <nav class="header__nav">
             <ul class="menu">
-              <li class="menu_item">
-                <a href="#" class="menu_link">Для мужчин</a>
+              <li class="menu__item header__menu-item">
+                <a href="#" class="menu__link">Для мужчин</a>
                 <ul class="submenu">
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="menu_item">
-                <a href="#" class="menu_link">Для женщин</a>
+              <li class="menu__item header__menu-item">
+                <a href="#" class="menu__link">Для женщин</a>
                 <ul class="submenu">
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="menu_item">
-                <a href="#" class="menu_link">Для детей</a>
+              <li class="menu__item header__menu-item">
+                <a href="#" class="menu__link">Для детей</a>
                 <ul class="submenu">
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
-                  <li class="submenu_item">
+                  <li class="submenu__item">
                     <a href="#">Item</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </nav>
-          <div class="header_links_payment_delivery">
+          <div class="header__links">
             <a href="#" class="header__link">Оплата</a>
             <a href="#" class="header__link">Доставка</a>
           </div>
           <div class="cart">
-            <a href="#" class="cart-link">
-              <span class="sr_only">Корзина</span>
+            <a href="#" class="cart__link">
+              <span class="sr__only">Корзина</span>
               <img
                 src="images/shopping-basket-button.svg"
                 alt="cart-icon"
-                class="cart_icon"
+                class="cart__icon"
               />
             </a>
-            <span class="span_informer">5 </span>
+            <span class="cart__informer">5 </span>
           </div>
         </div>
       </div>
     </div>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__item-inner">
+              <div class="slider__text">
+                <h3 class="slider__title">Зимняя Распродажа</h3>
+                <span class="slider__promo">Скидки до 90%</span>
+                <a href="#" class="btn">Смотреть модели</a>
+              </div>
+              <div class="slider__img">
+                <img src="images/first-screen__image.png" alt="product img" />
+              </div>
+              <div class="slider__price">
+                <span class="old__price"> 9 900 &#8381;</span>
+                <span class="new__price"> 1 900 &#8381;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

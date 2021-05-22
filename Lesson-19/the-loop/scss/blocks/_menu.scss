@@ -1,9 +1,49 @@
 @import "../vars";
 
-menu {
+.menu {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   text-decoration: none;
+
+  &__link {
+    position: relative;
+    padding-right: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: $darkest-color;
+    text-decoration: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-top: 5px solid $darkest-color;
+      border-right: 5px solid transparent;
+    }
+  }
+
+  &__item {
+    padding: 1em 0;
+    position: relative;
+
+    /*здесь можно использовать margin-right: 35px - тогда для последнего элемента - нужно прописать правило --> &__item:last-child (указано ниже); */
+  }
+
+  /*&__item:last-child {
+    margin-right: 0;
+  }  /*есть более изящный подход - &__item + &__item(следует ниже)*/
+
+  &__item + &__item {
+    margin-left: 35px;
+  } /* говорит: Посмотри - если там есть Menu__Item --> если после него следует точно такой же элемент --> то у него будет margin-left 35рх,иначе - Ложь (и тогда последние элементы в спискебудут без маржин,только элемент в середине будет иметь маржин с двух сторон... ) */
 }

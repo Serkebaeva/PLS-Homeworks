@@ -28,7 +28,8 @@ body {
   background-color: #f9f6f1;
 }
 
-.header_inner {
+.header__inner {
+  padding-top: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -37,25 +38,63 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header nav {
+  max-width: 445px;
   -webkit-box-ordinal-group: 0;
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
 }
 
-.menu_link {
-  list-style: none;
+.header__menu-item:hover .submenu {
+  display: block;
   text-decoration: none;
+  display: block;
+  padding: 0.8em 0.3em;
+  color: #212121;
+  text-align: center;
 }
 
 .submenu {
   display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d7b399;
+  width: 100%;
+  z-index: 2;
 }
 
-menu {
+.submenu__item {
+  text-decoration: none;
+  display: block;
+  padding: 0.8em 0.3em;
+  color: #212121;
+  text-align: center;
+}
+
+.sr__only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  /*будем вырезать, описываем прямоугольник у кот.нет никаких сторон*/
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0;
+}
+
+.menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -64,4 +103,52 @@ menu {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
+  /*&__item:last-child {
+    margin-right: 0;
+  }  /*есть более изящный подход - &__item + &__item(следует ниже)*/
+  /* говорит: Посмотри - если там есть Menu__Item --> если после него следует точно такой же элемент --> то у него будет margin-left 35рх,иначе - Ложь (и тогда последние элементы в спискебудут без маржин,только элемент в середине будет иметь маржин с двух сторон... ) */
+}
+
+.menu__link {
+  position: relative;
+  padding-right: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.menu__link::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #212121;
+  border-right: 5px solid transparent;
+}
+
+.menu__item {
+  padding: 1em 0;
+  position: relative;
+  /*здесь можно использовать margin-right: 35px - тогда для последнего элемента - нужно прописать правило --> &__item:last-child (указано ниже); */
+}
+
+.menu__item + .menu__item {
+  margin-left: 35px;
+}
+
+.cart img {
+  margin-right: 15px;
+}
+
+.cart__informer {
+  display: inline-block;
+  background-color: #d7b399;
 }

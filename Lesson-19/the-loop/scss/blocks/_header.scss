@@ -3,21 +3,65 @@
 .header {
   background-color: $lightest-color;
 
-  &_inner {
+  &__inner {
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   nav {
+    max-width: 445px;
     order: -1;
   }
-}
 
-.menu_link {
-  list-style: none;
-  text-decoration: none;
+  &__menu-item {
+    &:hover .submenu {
+      display: block;
+      text-decoration: none;
+      display: block;
+      padding: 0.8em 0.3em;
+      color: $darkest-color;
+      text-align: center;
+    }
+  }
 }
 
 .submenu {
   display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $accent-color;
+  width: 100%;
+  z-index: 2;
+}
+
+.submenu__item {
+  text-decoration: none;
+  display: block;
+  padding: 0.8em 0.3em;
+  color: $darkest-color;
+  text-align: center;
+}
+
+&__links {
+  width: 220px;
+}
+.sr__only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(
+    0,
+    0,
+    0,
+    0
+  ); /*будем вырезать, описываем прямоугольник у кот.нет никаких сторон*/
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 }
