@@ -1,5 +1,3 @@
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
+$(document).ready(function () {
+  $(".slider-inner").slick();
+});
