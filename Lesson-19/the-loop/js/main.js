@@ -1,3 +1,6 @@
 $(document).ready(function () {
-  $(".slider-inner").slick();
+  $(".slider__inner").slick({
+    arrows: false,
+    dots: true,
+  });
 });
