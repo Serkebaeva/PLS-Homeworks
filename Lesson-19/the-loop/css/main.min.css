@@ -282,3 +282,34 @@ body {
     margin-bottom: 170px;
   }
 }*/
+.info {
+  background-color: #212121;
+  color: white;
+}
+
+.info__inner {
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 80px 0 70px 0;
+  text-align: center;
+}
+
+.info__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.info span {
+  font-weight: 300;
+}
+
+.info__txt {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
