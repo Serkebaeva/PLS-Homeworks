@@ -44,6 +44,10 @@ body {
           align-items: center;
 }
 
+.header__links {
+  width: 220px;
+}
+
 .header nav {
   max-width: 445px;
   -webkit-box-ordinal-group: 0;
@@ -144,11 +148,137 @@ body {
   margin-left: 35px;
 }
 
-.cart img {
+.cart__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.cart__img {
   margin-right: 15px;
 }
 
 .cart__informer {
   display: inline-block;
   background-color: #d7b399;
+  padding: 5px 13px;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
 }
+
+.slider {
+  background-color: #f9f6f1;
+}
+
+.slider__inner {
+  /*padding-top: 170px;*/
+  padding-bottom: 70px;
+}
+
+.slider__item-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 131px;
+}
+
+.slider__text {
+  width: 50%;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border: 50px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 0.04em;
+  color: #212121;
+}
+
+.slider__img {
+  width: 50%;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.slider__item-title {
+  display: inline-block;
+  /*margin: 0 0 35px 0;*/
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.slider__price {
+  /*position: absolute;*/
+  display: block;
+  right: 0;
+  max-width: 255px;
+  text-align: right;
+}
+
+.slider__old-price, .slider__new-price {
+  display: block;
+}
+
+.slider .slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  border: none;
+  width: 40px;
+  height: 7px;
+  margin-right: 15px;
+  background-color: #d7b399;
+  cursor: pointer;
+}
+
+.slider .slick-active button {
+  background-color: #cecece;
+}
+
+.slider__column {
+  width: 50%;
+  margin-bottom: 130px;
+}
+
+.slider .price-old {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+/*.page {
+  &__header {
+    margin-bottom: 170px;
+  }
+}*/

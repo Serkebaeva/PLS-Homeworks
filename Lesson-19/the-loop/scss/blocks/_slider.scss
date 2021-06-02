@@ -2,33 +2,31 @@
 
 .slider {
   background-color: $lightest-color;
-  padding-top: 160px;
-  padding-bottom: 70px;
 
+  &__inner {
+    /*padding-top: 170px;*/
+    padding-bottom: 70px;
+  }
   &__item-inner {
-    /*position: relative;*/
     display: flex;
-    /*justify-content: space-between;*/
+    position: relative;
     margin-top: 131px;
   }
 
-  &__item-text {
+  &__text {
     width: 50%;
     justify-content: left;
     border: 50px;
-    /*  margin: 0 0 55px 0;
     font-weight: 700;
     font-size: 55px;
     line-height: 67px;
     letter-spacing: 0.04em;
-    color: $darkest-color;*/
+    color: $darkest-color;
   }
 
   &__img {
     width: 50%;
-    margin-left: 200px;
-    height: 425px;
-    float: right;
+    justify-content: right;
   }
 
   &__item-title {
@@ -40,18 +38,43 @@
     color: $darkest-color;
   }
 
+  &__price {
+    /*position: absolute;*/
+    display: block;
+    right: 0;
+    max-width: 255px;
+    text-align: right;
+  }
+
+  &__old-price,
+  &__new-price {
+    display: block;
+  }
+
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .slick-dots button {
+    font-size: 0;
+    border: none;
+    width: 40px;
+    height: 7px;
+    margin-right: 15px;
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+  .slick-active button {
+    background-color: #cecece;
+  }
+
   &__column {
     width: 50%;
     margin-bottom: 130px;
   }
 
-  &__price {
-    position: absolute;
-    right: 0;
-    text-align: right;
-  }
-
-  &__price-old {
+  .price-old {
     display: block;
     margin-bottom: 15px;
     font-size: 24px;

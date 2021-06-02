@@ -1,15 +1,12 @@
 @import "../vars";
 
 .cart {
-  & a {
-    text-decoration: none;
-  }
-
   &__link {
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
-  &img {
+  &__img {
     margin-right: 15px;
   }
 
@@ -19,5 +16,6 @@
     padding: 5px 13px;
     font-size: 12px;
     line-height: 12px;
+    text-decoration: none;
   }
 }

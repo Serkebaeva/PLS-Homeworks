@@ -10,6 +10,10 @@
     align-items: center;
   }
 
+  &__links {
+    width: 220px;
+  }
+
   nav {
     max-width: 445px;
     order: -1;
@@ -46,9 +50,6 @@
   text-align: center;
 }
 
-&__links {
-  width: 220px;
-}
 .sr__only {
   position: absolute;
   width: 1px;
