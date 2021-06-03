@@ -32,6 +32,16 @@
     justify-content: right;
   }
 
+  &__title {
+    margin: 0 0 35px 0;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: $darkest-color;
+    text-transform: none;
+  }
+
   &__item-title {
     margin: 0 0 35px 0;
     font-size: 30px;
@@ -45,6 +55,11 @@
     right: 0;
     max-width: 255px;
     text-align: right;
+  }
+
+  &__promo {
+    font-weight: 700;
+    font-size: 56px;
   }
 
   &__old-price,

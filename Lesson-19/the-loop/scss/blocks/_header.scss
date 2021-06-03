@@ -20,6 +20,11 @@
     text-decoration: none;
     color: $darkest-color;
   }
+
+  &__btn {
+    overflow: hidden;
+  }
+
   nav {
     max-width: 445px;
     order: -1;
