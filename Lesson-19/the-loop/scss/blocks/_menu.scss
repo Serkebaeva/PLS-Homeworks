@@ -33,9 +33,9 @@
   }
 
   &__item {
-    padding: 1em 0;
+    padding: 1em 12px 1em 0;
     position: relative;
-
+    cursor: pointer;
     /*здесь можно использовать margin-right: 35px - тогда для последнего элемента - нужно прописать правило --> &__item:last-child (указано ниже); */
   }
 
@@ -46,4 +46,37 @@
   &__item + &__item {
     margin-left: 35px;
   } /* говорит: Посмотри - если там есть Menu__Item --> если после него следует точно такой же элемент --> то у него будет margin-left 35рх,иначе - Ложь (и тогда последние элементы в спискебудут без маржин,только элемент в середине будет иметь маржин с двух сторон... ) */
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+    background-color: $accent-color;
+
+    & li {
+      text-align: center;
+    }
+
+    & a {
+      display: block;
+      padding: 1em 0;
+      text-decoration: none;
+      color: $darkest-color;
+      background-color: $accent-color;
+      transition: 0.3s;
+    }
+
+    & a:hover {
+      background-color: $secondary-accent;
+    }
+  }
+
+  &__item:hover &__submenu {
+    display: block;
+  }
 }

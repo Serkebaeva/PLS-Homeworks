@@ -1,0 +1,10 @@
+@import "../vars";
+
+.logo {
+  width: 201px;
+
+  &__link {
+    text-decoration: none;
+    line-height: 1;
+  }
+}
