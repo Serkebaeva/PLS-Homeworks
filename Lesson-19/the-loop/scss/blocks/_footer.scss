@@ -1,0 +1,10 @@
+@import "../vars";
+
+.footer {
+  &__info {
+    padding-top: 73px;
+    padding-bottom: 78px;
+    background-color: $darkest-color;
+    color: $light;
+  }
+}

@@ -185,6 +185,15 @@ body {
   display: block;
 }
 
+.logo {
+  width: 201px;
+}
+
+.logo__link {
+  text-decoration: none;
+  line-height: 1;
+}
+
 .cart__link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -586,4 +595,11 @@ subscribe__button {
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   border: 0;
+}
+
+.footer__info {
+  padding-top: 73px;
+  padding-bottom: 78px;
+  background-color: #212121;
+  color: #fff;
 }
