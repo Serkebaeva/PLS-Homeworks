@@ -14,6 +14,12 @@
     width: 220px;
   }
 
+  &__link {
+    width: 56px;
+    height: 17px;
+    text-decoration: none;
+    color: $darkest-color;
+  }
   nav {
     max-width: 445px;
     order: -1;

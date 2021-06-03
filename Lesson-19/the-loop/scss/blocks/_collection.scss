@@ -19,15 +19,19 @@
   &__btn {
     position: relative;
     margin-top: 103px;
-    padding-right: 64px;
+    padding-right: 94px;
+    padding-top: 6px;
+    text-decoration: none;
+    color: $light;
   }
   &__btn::after {
     position: absolute;
     content: "";
-    width: 20px;
-    height: 8px;
+    width: 220px;
+    height: 55px;
     right: 35px;
-    top: 21px;
+    top: -10px;
+    z-index: -1;
     background-image: url(../../images/new-item__button.png);
     background-position: center;
   }

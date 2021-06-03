@@ -7,13 +7,15 @@
     /*padding-top: 170px;*/
     padding-bottom: 70px;
   }
+
   &__item-inner {
     display: flex;
     position: relative;
     margin-top: 131px;
+    justify-content: space-between;
   }
 
-  &__text {
+  &__item-text {
     width: 50%;
     justify-content: left;
     border: 50px;
@@ -22,6 +24,7 @@
     line-height: 67px;
     letter-spacing: 0.04em;
     color: $darkest-color;
+    margin: 0 0 55px 0;
   }
 
   &__img {
@@ -30,8 +33,7 @@
   }
 
   &__item-title {
-    display: inline-block;
-    /*margin: 0 0 35px 0;*/
+    margin: 0 0 35px 0;
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.02em;
@@ -39,8 +41,7 @@
   }
 
   &__price {
-    /*position: absolute;*/
-    display: block;
+    position: absolute;
     right: 0;
     max-width: 255px;
     text-align: right;
@@ -74,7 +75,7 @@
     margin-bottom: 130px;
   }
 
-  .price-old {
+  &__old-price {
     display: block;
     margin-bottom: 15px;
     font-size: 24px;
@@ -83,5 +84,15 @@
     text-align: right;
     letter-spacing: 0.05em;
     text-decoration-line: line-through;
+    text-transform: uppercase;
+  }
+
+  &__new-price {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: $secondary-accent;
   }
 }

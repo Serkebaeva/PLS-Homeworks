@@ -1,11 +1,15 @@
 @import "../vars";
 
 .cart {
+  max-width: 120px;
+  display: flex;
+  justify-content: start;
+
   &__link {
-    display: flex;
-    align-items: center;
     text-decoration: none;
+    margin-right: 15.25px;
   }
+
   &__img {
     margin-right: 15px;
   }
@@ -13,9 +17,23 @@
   &__informer {
     display: inline-block;
     background-color: $accent-color;
-    padding: 5px 13px;
+    padding: 9px 10px 0px 10px;
     font-size: 12px;
     line-height: 12px;
     text-decoration: none;
+    color: $light;
+    font-weight: bold;
+  }
+
+  &__informer::before {
+    position: absolute;
+    left: -11px;
+    top: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 11px solid $accent-color;
+    border-bottom: 9px solid transparent;
   }
 }

@@ -49,6 +49,13 @@ body {
   width: 220px;
 }
 
+.header__link {
+  width: 56px;
+  height: 17px;
+  text-decoration: none;
+  color: #212121;
+}
+
 .header nav {
   max-width: 445px;
   -webkit-box-ordinal-group: 0;
@@ -194,16 +201,21 @@ body {
   line-height: 1;
 }
 
-.cart__link {
+.cart {
+  max-width: 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.cart__link {
   text-decoration: none;
+  margin-right: 15.25px;
 }
 
 .cart__img {
@@ -213,10 +225,24 @@ body {
 .cart__informer {
   display: inline-block;
   background-color: #d7b399;
-  padding: 5px 13px;
+  padding: 9px 10px 0px 10px;
   font-size: 12px;
   line-height: 12px;
   text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cart__informer::before {
+  position: absolute;
+  left: -11px;
+  top: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-right: 11px solid #d7b399;
+  border-bottom: 9px solid transparent;
 }
 
 .slider {
@@ -235,9 +261,13 @@ body {
   display: flex;
   position: relative;
   margin-top: 131px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.slider__text {
+.slider__item-text {
   width: 50%;
   -webkit-box-pack: left;
   -webkit-justify-content: left;
@@ -249,6 +279,7 @@ body {
   line-height: 67px;
   letter-spacing: 0.04em;
   color: #212121;
+  margin: 0 0 55px 0;
 }
 
 .slider__img {
@@ -260,8 +291,7 @@ body {
 }
 
 .slider__item-title {
-  display: inline-block;
-  /*margin: 0 0 35px 0;*/
+  margin: 0 0 35px 0;
   font-size: 30px;
   line-height: 37px;
   letter-spacing: 0.02em;
@@ -269,8 +299,7 @@ body {
 }
 
 .slider__price {
-  /*position: absolute;*/
-  display: block;
+  position: absolute;
   right: 0;
   max-width: 255px;
   text-align: right;
@@ -311,7 +340,7 @@ body {
   margin-bottom: 130px;
 }
 
-.slider .price-old {
+.slider__old-price {
   display: block;
   margin-bottom: 15px;
   font-size: 24px;
@@ -321,6 +350,16 @@ body {
   letter-spacing: 0.05em;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+.slider__new-price {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: right;
+  letter-spacing: 0.02em;
+  color: #d84033;
 }
 
 /*.page {
@@ -334,7 +373,7 @@ body {
 }
 
 .info__inner {
-  max-width: 590px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 80px 0 70px 0;
   text-align: center;
@@ -475,22 +514,26 @@ body {
 .collection__btn {
   position: relative;
   margin-top: 103px;
-  padding-right: 64px;
+  padding-right: 94px;
+  padding-top: 6px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .collection__btn::after {
   position: absolute;
   content: "";
-  width: 20px;
-  height: 8px;
+  width: 220px;
+  height: 55px;
   right: 35px;
-  top: 21px;
+  top: -10px;
+  z-index: -1;
   background-image: url(../../images/new-item__button.png);
   background-position: center;
 }
 
 .models {
-  margin: 0;
+  margin: 0 0 75px 0;
   padding: 0;
   list-style: none;
   display: -ms-grid;
@@ -542,24 +585,25 @@ body {
   text-decoration: none;
 }
 
-subscribe__inner {
-  max-width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 575px 475px;
-      grid-template-columns: 575px 475px;
-  grid-gap: 65px;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+.subscribe__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1140px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-subscribe__title {
+.subscribe__title {
   text-align: left;
+  display: block;
+  width: 585px;
 }
 
-subscribe__email {
+.subscribe__email {
   width: 255px;
   height: 40px;
   margin-right: 35px;
@@ -568,12 +612,12 @@ subscribe__email {
   font-weight: 300;
   font-size: 12px;
   line-height: 15px;
-  text-align: left;
+  text-align: right;
   letter-spacing: 0.02em;
   color: #8d8d8d;
 }
 
-subscribe__button {
+.subscribe__btn {
   padding: 12px 14px;
   font-style: normal;
   font-weight: 500;
@@ -582,6 +626,11 @@ subscribe__button {
   border: none;
   cursor: pointer;
   background-color: #d7b399;
+}
+
+.subscribe__form {
+  width: 500px;
+  display: block;
 }
 
 .sr-only {

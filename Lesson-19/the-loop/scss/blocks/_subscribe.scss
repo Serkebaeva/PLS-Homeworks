@@ -1,16 +1,17 @@
 @import "../vars";
 
-subscribe {
+.subscribe {
   &__inner {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 575px 475px;
-    grid-gap: 65px;
-    align-items: stretch;
+    // max-width: 100%;
+    display: flex;
+    width: 1140px;
+    align-items: center;
   }
 
   &__title {
     text-align: left;
+    display: block;
+    width: 585px;
   }
 
   &__email {
@@ -22,12 +23,12 @@ subscribe {
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
-    text-align: left;
+    text-align: right;
     letter-spacing: 0.02em;
     color: $input-color;
   }
 
-  &__button {
+  &__btn {
     padding: 12px 14px;
     font-style: normal;
     font-weight: 500;
@@ -36,5 +37,10 @@ subscribe {
     border: none;
     cursor: pointer;
     background-color: $accent-color;
+  }
+
+  &__form {
+    width: 500px;
+    display: block;
   }
 }
