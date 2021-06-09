@@ -53,11 +53,8 @@ body {
   width: 56px;
   height: 17px;
   text-decoration: none;
+  list-style: none;
   color: #212121;
-}
-
-.header__btn {
-  overflow: hidden;
 }
 
 .header nav {
@@ -119,6 +116,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
+  list-style: none;
   /*&__item:last-child {
     margin-right: 0;
   }  /*есть более изящный подход - &__item + &__item(следует ниже)*/
@@ -171,6 +169,8 @@ body {
   padding: 1em 0;
   list-style: none;
   background-color: #d7b399;
+  text-decoration: none;
+  color: #f9f6f1;
 }
 
 .menu__submenu li {
@@ -194,6 +194,9 @@ body {
 
 .menu__item:hover .menu__submenu {
   display: block;
+  list-style: none;
+  background-color: #f9f6f1;
+  text-decoration: none;
 }
 
 .logo {
@@ -227,7 +230,7 @@ body {
 }
 
 .cart__informer {
-  display: inline-block;
+  /*display: inline-block;*/
   background-color: #d7b399;
   padding: 9px 10px 0px 10px;
   font-size: 12px;
@@ -239,8 +242,6 @@ body {
 
 .cart__informer::before {
   position: absolute;
-  left: -11px;
-  top: 0;
   content: "";
   width: 0;
   height: 0;

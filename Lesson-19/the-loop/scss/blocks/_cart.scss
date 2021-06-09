@@ -15,7 +15,7 @@
   }
 
   &__informer {
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: $accent-color;
     padding: 9px 10px 0px 10px;
     font-size: 12px;
@@ -27,8 +27,6 @@
 
   &__informer::before {
     position: absolute;
-    left: -11px;
-    top: 0;
     content: "";
     width: 0;
     height: 0;
