@@ -1,1 +1,2 @@
-test - READMME inside the subcatalog
+Responsive Web Design Principles:
+Media Query Practice.
