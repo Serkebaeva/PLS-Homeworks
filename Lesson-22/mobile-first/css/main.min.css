@@ -214,6 +214,7 @@ img {
 @media (min-width: 992px) {
   .container {
     max-width: 1140px;
+    margin: 0 auto;
   }
   .services__list {
     -ms-grid-columns: 1fr 1fr 1fr;
