@@ -6,3 +6,92 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #ddd;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  &__nav {
+    width: 70%;
+    padding: 1em 0;
+  }
+}
+
+.logo {
+  max-width: 30%;
+  text-align: center;
+
+  &__link {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #ccc;
+    border-radius: 0.5em;
+  }
+}
+
+.menu-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  &__item + &__item {
+    margin-left: 0.5em;
+  }
+
+  &__link {
+    display: block;
+    border-radius: 0.4em;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+  }
+}
+
+@media (max-width: 790px) {
+  .logo {
+    max-width: 70%;
+  }
+
+  .menu-toggler {
+    display: block;
+  }
+
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__nav {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
