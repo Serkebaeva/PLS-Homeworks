@@ -114,6 +114,26 @@ img {
   }
 }
 
+.blog {
+  background-color: #333;
+  color: white;
+
+  &__inner {
+    padding: 1em 0;
+    color: white;
+  }
+
+  &__post {
+    margin-bottom: 1em;
+  }
+
+  &__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+}
+
 @media (max-width: 790px) {
   .logo {
     max-width: 70%;
