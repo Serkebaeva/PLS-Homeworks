@@ -120,6 +120,7 @@ img {
 
   &__inner {
     padding: 1em 0;
+    background-color: #333;
     color: white;
   }
 
@@ -131,6 +132,28 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
+  }
+
+  &__post-img {
+    display: block;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__excerpt {
+    margin: 0;
+    padding: 0.7em;
+  }
+
+  &__post-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  &__copy {
+    text-align: center;
   }
 }
 
@@ -178,6 +201,12 @@ img {
       grid-template-columns: 1fr 1fr;
     }
   }
+
+  .blog {
+    &__posts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -192,6 +221,12 @@ img {
   .services {
     &__list {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .blog {
+    &__posts {
+      display: block;
     }
   }
 }
