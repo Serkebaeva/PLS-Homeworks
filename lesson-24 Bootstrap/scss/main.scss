@@ -1,0 +1,22 @@
+.header {
+  background-color: #ddd;
+
+  .navbar {
+    padding: 1em 0;
+  }
+
+  .nav-link {
+    color: white;
+    border-radius: 0.4em;
+    background-color: #333;
+  }
+}
+
+.logo {
+  padding: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+  background-color: #ccc;
+  border-radius: 0.5em;
+  color: black;
+}
