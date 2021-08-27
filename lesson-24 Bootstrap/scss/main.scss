@@ -5,10 +5,22 @@
     padding: 1em 0;
   }
 
+  /*.nav-item + .nav-item {
+    margin-left: 1em;
+  }*/
+
   .nav-link {
     color: white;
     border-radius: 0.4em;
     background-color: #333;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler {
+    border: 1px solid black;
+    padding: 0.2em;
   }
 }
 
@@ -19,4 +31,24 @@
   background-color: #ccc;
   border-radius: 0.5em;
   color: black;
+}
+
+@media (max-width: 992px) {
+  .header {
+    .navbar-nav {
+      margin-top: 1em;
+      text-align: center;
+    }
+
+    .nav-link {
+      border-radius: 0;
+      border: none !important;
+      /*background-repeat: 0;
+      border-bottom: 1px dotted white;*/
+    }
+  }
+
+  .nav-item + .nav-item {
+    margin-left: 0;
+  }
 }
