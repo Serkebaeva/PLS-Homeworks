@@ -33,6 +33,15 @@
   color: black;
 }
 
+.logo:hover {
+  color: white;
+}
+
+.about {
+  background-color: #333;
+  color: white;
+}
+
 @media (max-width: 992px) {
   .header {
     .navbar-nav {
