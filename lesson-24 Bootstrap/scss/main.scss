@@ -42,6 +42,13 @@
   color: white;
 }
 
+.slider {
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 992px) {
   .header {
     .navbar-nav {
@@ -51,9 +58,9 @@
 
     .nav-link {
       border-radius: 0;
-      border: none !important;
-      /*background-repeat: 0;
-      border-bottom: 1px dotted white;*/
+      /*border: none !important;*/
+      background-repeat: 0;
+      border-bottom: 1px dotted white;
     }
   }
 
