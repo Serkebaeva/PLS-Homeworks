@@ -1,3 +1,3 @@
-let myString = "How are you?";
+let userName = "Ivan";
 
-console.log(myString.length);
+console.log(userName.toUpperCase());
