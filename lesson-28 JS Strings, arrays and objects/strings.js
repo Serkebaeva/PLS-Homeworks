@@ -1,3 +1,3 @@
 let userName = "Ivan";
 
-console.log(userName.toUpperCase());
+console.log(userName.repeat(3));
