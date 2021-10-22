@@ -15,7 +15,7 @@ console.log(a);
 console.log(b);*/
 
 //Zadacha
-let a = 2;
+/*let a = 2;
 let x = 1 + (a *= 2);
 console.log(x);
 
@@ -23,4 +23,4 @@ console.log(x);
 console.log("d" < "c");
 console.log("b" < "d");
 console.log("k" < "a");
-console.log("b" > "a");
+console.log("b" > "a");*/
